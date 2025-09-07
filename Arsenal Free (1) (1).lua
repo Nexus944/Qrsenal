@@ -1600,14 +1600,14 @@ end)
 
 local Credit = Window:NewTab("Credits")
 local Section = Credit:NewSection("Credits")
-local Section = Credit:NewSection("Script Developed by: AdvanceFalling Team")
+local Section = Credit:NewSection("Script Developed by: VantaX")
 Section:NewDropdown("Developer", "Dev", {"YellowGreg", "WspBoy12", "MMSVon", "ShadowClark", "Frostbite"}, function(currentDeveloper)
     local creations = {
-        YellowGreg = "Owner",
-        WspBoy12 = "Head Developer",
-        MMSVon = "Head Developer",
-        ShadowClark = "Head Developer",
-        Frostbite = "Head Developer",
+        VantaX = "Owner",
+        VantaX = "Head Developer",
+        VantaX = "Head Developer",
+        VantaX = "Head Developer",
+        VantaX = "Head Developer",
     }
     print(currentDeveloper .. " created " .. creations[currentDeveloper])
 end)
@@ -1673,4 +1673,5 @@ game:GetService("UserInputService").InputChanged:Connect(function(input)
     if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
         update(input)
     end
+
 end)
